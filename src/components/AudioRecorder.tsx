@@ -98,7 +98,7 @@ export const AudioRecorder: React.FC<AudioRecorderProps> = ({
     onRecordingStop?.();
     
     if (intervalRef.current) {
-      clearInterval(intervalRef.current);
+      window.clearInterval(intervalRef.current);
       intervalRef.current = null;
     }
   };
