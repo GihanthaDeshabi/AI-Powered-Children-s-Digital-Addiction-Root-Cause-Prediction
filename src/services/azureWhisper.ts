@@ -3,7 +3,7 @@ import { WhisperResponse } from '../types';
 export class WhisperService {
   private static readonly ENDPOINT = import.meta.env.VITE_WHISPER_ENDPOINT;
   private static readonly API_KEY = import.meta.env.VITE_AZURE_API_KEY;
- 
+
   static async transcribeAudio(audioBlob: Blob): Promise<string> {
     if (!this.ENDPOINT || !this.API_KEY) {
       throw new Error('Azure Whisper configuration missing');
