@@ -81,7 +81,7 @@ export class GPTService {
     }
   }
 
-  static async testConnection(): Promise<boolean> {
+  static async testConnection(): Promise<boolean> { 
     try {
       await this.analyzeResponse(
         "I like playing games",
