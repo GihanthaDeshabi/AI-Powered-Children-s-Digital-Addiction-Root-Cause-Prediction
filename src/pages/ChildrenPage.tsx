@@ -4,7 +4,7 @@ import { Plus, Edit, Trash2, Play, Users, Calendar } from 'lucide-react';
 import { Layout } from '../components/Layout';
 import { StorageService } from '../services/storage';
 import { Child, AgeGroup } from '../types';
-import { AGE_GROUPS } from '../utils/constants';
+import { /* AGE_GROUPS */ } from '../utils/constants';
 
 export const ChildrenPage: React.FC = () => {
   const [children, setChildren] = useState<Child[]>([]);
