@@ -335,7 +335,7 @@ export const ReportPage: React.FC = () => {
                 question={{
                   id: `q-${index}`,
                   text: result.question,
-                  ageGroup: "6-8", // This doesn't matter for display
+                  ageGroup: "6-8", // This doesn't matter for display 
                   category: "assessment"
                 }}
                 questionNumber={index + 1}
